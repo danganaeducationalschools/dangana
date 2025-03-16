@@ -3,39 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dangana School</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <title>Home | Dangana Educational School Complex</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="school-banner.jpg" alt="Dangana School Logo">
-            </a>
-            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Dangana School</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
     </nav>
 
-    <header class="hero">
-        <h1>Welcome to Dangana Educational School Complex</h1>
-        <p>Knowledge is power.</p>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Dangana Educational School Complex</h1>
+            <p>Providing quality education for a brighter future.</p>
+        </div>
     </header>
 
+    <!-- Main Content -->
     <section class="content">
         <p>Explore our school and discover a top learning environment.</p>
-        <button>Home</button>
-        <button>Back</button>
     </section>
 
+    <div class="buttons">
+        <a href="index.html" class="btn">Home</a>
+        <button onclick="history.back()" class="btn">Back</button>
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Dangana Educational School Complex | All Rights Reserved</p>
+        <p>&copy; 2025 Dangana Educational School Complex | All Rights Reserved</p>
     </footer>
 
 </body>
