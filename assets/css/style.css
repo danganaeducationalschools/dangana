@@ -61,37 +61,51 @@ body {
 .hero-section {
     position: relative;
     background: url('../school-banner.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: #fff;
-    padding: 100px 20px;
+    color: white;
+    padding: 20px;
 }
 
-/* Dark Overlay for Better Readability */
-.hero-section::before {
-    content: "";
+/* Overlay effect */
+.hero-section .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    z-index: 1;
+    background: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
 }
 
-/* Ensures Text is Above the Overlay */
-.hero-section h1, .hero-section p {
-    position: relative;
-    z-index: 2;
-}
-
+/* Text Styling */
 .hero-section h1 {
     font-size: 36px;
     font-weight: bold;
+    z-index: 1;
 }
 
 .hero-section p {
     font-size: 20px;
-    margin-top: 10px;
+    z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh;
+    }
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
 }
 
 /* Content Section */
