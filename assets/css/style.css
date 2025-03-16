@@ -59,7 +59,7 @@ body {
 /* Hero Section */
 .hero-section {
     position: relative;
-    background: url('../../images/school-banner.jpg') no-repeat center center/cover;
+    background: url('../../school-banner.jpg') no-repeat center center/cover;
     background-color: #003366; /* Fallback color */
     height: 80vh;
     display: flex;
